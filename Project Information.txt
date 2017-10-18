@@ -1,0 +1,11 @@
+Thechnology which is used to developed Desktop POS Application
+
+TECHNOLOGY
+
+C#
+SqlServer-2012.
+Team Foundation Server(TFS)
+Crystal Report
+
+N.B: In my gihub project file, one can easily check my Source Code But for running this application need Database 
+File which is not uploaded in github
