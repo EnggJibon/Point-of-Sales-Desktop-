@@ -1,0 +1,644 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Models" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ProductCategoryId" Type="Int64" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="SetOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SetBy" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="ProductCategory" Relationship="Self.FK_Product_ProductCategory" FromRole="Product" ToRole="ProductCategory" />
+    <NavigationProperty Name="PurchaseChallanDetails" Relationship="Self.FK_PurchaseChallanDetails_Product1" FromRole="Product" ToRole="PurchaseChallanDetails" />
+  </EntityType>
+  <EntityType Name="ProductCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductCategoryName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="SetOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SetBy" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_Product_ProductCategory" FromRole="ProductCategory" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="ProductLedger">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" />
+    <Property Name="TransactionDate" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ProductId" Type="Int64" Nullable="false" />
+    <Property Name="OpenQuantity" Type="Int32" Nullable="false" />
+    <Property Name="ClosingQuantity" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="SetOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SetBy" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="ProductLedgerDetails" Relationship="Self.FK_ProductLedgerDetails_ProductLedger" FromRole="ProductLedger" ToRole="ProductLedgerDetails" />
+  </EntityType>
+  <EntityType Name="ProductLedgerDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductLedgerId" Type="Int64" Nullable="false" />
+    <Property Name="PurchaseReceiveDetailId" Type="Int64" />
+    <Property Name="PurchaseReturnDetailId" Type="Int64" />
+    <Property Name="SaleDetailId" Type="Int64" />
+    <Property Name="SaleReturnReceiveDetailId" Type="Int64" />
+    <Property Name="TransferQuantity" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="SetOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SetBy" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="ProductLedger" Relationship="Self.FK_ProductLedgerDetails_ProductLedger" FromRole="ProductLedgerDetails" ToRole="ProductLedger" />
+  </EntityType>
+  <EntityType Name="ProductPrice">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PurchaseReceiveDetailId" Type="Int64" Nullable="false" />
+    <Property Name="PurchaseUnitPrice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="DiscountInPercentage" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ProductCost" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ProductSalePrice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="SetOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SetBy" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="PurchaseReceiveDetail" Relationship="Self.FK_ProductPrice_PurchaseReceiveDetails" FromRole="ProductPrice" ToRole="PurchaseReceiveDetails" />
+  </EntityType>
+  <EntityType Name="ProductSection">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductSectionName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="SetOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SetBy" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="ProductStores" Relationship="Self.FK_ProductStoreDetails_ProductSection" FromRole="ProductSection" ToRole="ProductStore" />
+  </EntityType>
+  <EntityType Name="ProductStore">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PurchaseReceiveDetailId" Type="Int64" Nullable="false" />
+    <Property Name="ProductId" Type="Int64" Nullable="false" />
+    <Property Name="Serial" Type="Int32" Nullable="false" />
+    <Property Name="ProductUnitId" Type="Int64" />
+    <Property Name="ProductSectionId" Type="Int64" />
+    <Property Name="ProductQuantity" Type="Int32" Nullable="false" />
+    <Property Name="ProductSizeCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ProductSizeNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ProductSizeAge" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="ProductColor" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="ProductStyle" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="SetOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SetBy" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="ProductSection" Relationship="Self.FK_ProductStoreDetails_ProductSection" FromRole="ProductStore" ToRole="ProductSection" />
+    <NavigationProperty Name="ProductUnit" Relationship="Self.FK_ProductStore_ProductUnit" FromRole="ProductStore" ToRole="ProductUnit" />
+    <NavigationProperty Name="PurchaseReceiveDetail" Relationship="Self.FK_ProductStoreDetails_PurchaseReceiveDetails" FromRole="ProductStore" ToRole="PurchaseReceiveDetails" />
+  </EntityType>
+  <EntityType Name="ProductUnit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductUnitName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="SetOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SetBy" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="ProductStores" Relationship="Self.FK_ProductStore_ProductUnit" FromRole="ProductUnit" ToRole="ProductStore" />
+  </EntityType>
+  <EntityType Name="PurchaseChallan">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ChallanNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ChallanDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SupplierId" Type="Int64" Nullable="false" />
+    <Property Name="OrderBy" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="SetOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SetBy" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Supplier" Relationship="Self.FK_PurchaseChallan_Supplier" FromRole="PurchaseChallan" ToRole="Supplier" />
+    <NavigationProperty Name="PurchaseChallanDetails" Relationship="Self.FK_PurchaseChallanDetails_PurchaseChallan" FromRole="PurchaseChallan" ToRole="PurchaseChallanDetails" />
+    <NavigationProperty Name="PurchaseReceives" Relationship="Self.FK_PurchaseReceive_PurchaseChallan" FromRole="PurchaseChallan" ToRole="PurchaseReceive" />
+  </EntityType>
+  <EntityType Name="PurchaseChallanDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PurchaseChallanId" Type="Int64" Nullable="false" />
+    <Property Name="ProductId" Type="Int64" Nullable="false" />
+    <Property Name="ProductUnitPrice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ProductQuantity" Type="Int32" Nullable="false" />
+    <Property Name="TotalPrice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="SetOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SetBy" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_PurchaseChallanDetails_Product1" FromRole="PurchaseChallanDetails" ToRole="Product" />
+    <NavigationProperty Name="PurchaseChallan" Relationship="Self.FK_PurchaseChallanDetails_PurchaseChallan" FromRole="PurchaseChallanDetails" ToRole="PurchaseChallan" />
+    <NavigationProperty Name="PurchaseReceiveDetails" Relationship="Self.FK_PurchaseReceiveDetails_PurchaseChallanDetails" FromRole="PurchaseChallanDetails" ToRole="PurchaseReceiveDetails" />
+  </EntityType>
+  <EntityType Name="PurchaseReceive">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ReceiveNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ReceiveDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ReceivedBy" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ReceivedFrom" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="ChallanId" Type="Int64" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="SetOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SetBy" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="PurchaseChallan" Relationship="Self.FK_PurchaseReceive_PurchaseChallan" FromRole="PurchaseReceive" ToRole="PurchaseChallan" />
+    <NavigationProperty Name="PurchaseReceiveDetails" Relationship="Self.FK_PurchaseReceiveDetails_PurchaseReceive1" FromRole="PurchaseReceive" ToRole="PurchaseReceiveDetails" />
+    <NavigationProperty Name="PurchaseReturns" Relationship="Self.FK_PurchaseReturn_PurchaseReceive1" FromRole="PurchaseReceive" ToRole="PurchaseReturn" />
+  </EntityType>
+  <EntityType Name="PurchaseReceiveDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PurchaseReceiveId" Type="Int64" Nullable="false" />
+    <Property Name="PurchaseChallanDetailId" Type="Int64" Nullable="false" />
+    <Property Name="ProductUnitPrice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ProductQuantity" Type="Int32" Nullable="false" />
+    <Property Name="TotalPrice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="SetOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SetBy" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="ProductPrices" Relationship="Self.FK_ProductPrice_PurchaseReceiveDetails" FromRole="PurchaseReceiveDetails" ToRole="ProductPrice" />
+    <NavigationProperty Name="ProductStores" Relationship="Self.FK_ProductStoreDetails_PurchaseReceiveDetails" FromRole="PurchaseReceiveDetails" ToRole="ProductStore" />
+    <NavigationProperty Name="PurchaseChallanDetail" Relationship="Self.FK_PurchaseReceiveDetails_PurchaseChallanDetails" FromRole="PurchaseReceiveDetails" ToRole="PurchaseChallanDetails" />
+    <NavigationProperty Name="PurchaseReceive" Relationship="Self.FK_PurchaseReceiveDetails_PurchaseReceive1" FromRole="PurchaseReceiveDetails" ToRole="PurchaseReceive" />
+    <NavigationProperty Name="PurchaseReturnDetails" Relationship="Self.FK_PurchaseReturnDetails_PurchaseReceiveDetails" FromRole="PurchaseReceiveDetails" ToRole="PurchaseReturnDetails" />
+  </EntityType>
+  <EntityType Name="PurchaseReturn">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ReturnNumber" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ReturnDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ReturnBy" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="PurchaseReceiveId" Type="Int64" Nullable="false" />
+    <Property Name="ReceiveNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SupplierId" Type="Int64" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="SetOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SetBy" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="PurchaseReceive" Relationship="Self.FK_PurchaseReturn_PurchaseReceive1" FromRole="PurchaseReturn" ToRole="PurchaseReceive" />
+    <NavigationProperty Name="PurchaseReturnDetails" Relationship="Self.FK_PurchaseReturnDetails_PurchaseReturn" FromRole="PurchaseReturn" ToRole="PurchaseReturnDetails" />
+  </EntityType>
+  <EntityType Name="PurchaseReturnDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PurchaseReturnId" Type="Int64" Nullable="false" />
+    <Property Name="PurchaseReceiveDetailId" Type="Int64" Nullable="false" />
+    <Property Name="ProductUnitPrice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ProductQuantity" Type="Int32" Nullable="false" />
+    <Property Name="TotalPrice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="SetOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SetBy" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="PurchaseReceiveDetail" Relationship="Self.FK_PurchaseReturnDetails_PurchaseReceiveDetails" FromRole="PurchaseReturnDetails" ToRole="PurchaseReceiveDetails" />
+    <NavigationProperty Name="PurchaseReturn" Relationship="Self.FK_PurchaseReturnDetails_PurchaseReturn" FromRole="PurchaseReturnDetails" ToRole="PurchaseReturn" />
+  </EntityType>
+  <EntityType Name="Supplier">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SupplierCode" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="SupplierName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="OwnerName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ContactNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="BankAccountNumber" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="TIN" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="SetOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SetBy" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="PurchaseChallans" Relationship="Self.FK_PurchaseChallan_Supplier" FromRole="Supplier" ToRole="PurchaseChallan" />
+  </EntityType>
+  <Association Name="FK_Product_ProductCategory">
+    <End Role="ProductCategory" Type="Self.ProductCategory" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductCategory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="ProductCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseChallanDetails_Product1">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="PurchaseChallanDetails" Type="Self.PurchaseChallanDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PurchaseChallanDetails">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductLedgerDetails_ProductLedger">
+    <End Role="ProductLedger" Type="Self.ProductLedger" Multiplicity="1" />
+    <End Role="ProductLedgerDetails" Type="Self.ProductLedgerDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductLedger">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductLedgerDetails">
+        <PropertyRef Name="ProductLedgerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductPrice_PurchaseReceiveDetails">
+    <End Role="PurchaseReceiveDetails" Type="Self.PurchaseReceiveDetail" Multiplicity="1" />
+    <End Role="ProductPrice" Type="Self.ProductPrice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PurchaseReceiveDetails">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductPrice">
+        <PropertyRef Name="PurchaseReceiveDetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductStoreDetails_ProductSection">
+    <End Role="ProductSection" Type="Self.ProductSection" Multiplicity="0..1" />
+    <End Role="ProductStore" Type="Self.ProductStore" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductSection">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductStore">
+        <PropertyRef Name="ProductSectionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductStore_ProductUnit">
+    <End Role="ProductUnit" Type="Self.ProductUnit" Multiplicity="0..1" />
+    <End Role="ProductStore" Type="Self.ProductStore" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductUnit">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductStore">
+        <PropertyRef Name="ProductUnitId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductStoreDetails_PurchaseReceiveDetails">
+    <End Role="PurchaseReceiveDetails" Type="Self.PurchaseReceiveDetail" Multiplicity="1" />
+    <End Role="ProductStore" Type="Self.ProductStore" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PurchaseReceiveDetails">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductStore">
+        <PropertyRef Name="PurchaseReceiveDetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseChallan_Supplier">
+    <End Role="Supplier" Type="Self.Supplier" Multiplicity="1" />
+    <End Role="PurchaseChallan" Type="Self.PurchaseChallan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PurchaseChallan">
+        <PropertyRef Name="SupplierId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseChallanDetails_PurchaseChallan">
+    <End Role="PurchaseChallan" Type="Self.PurchaseChallan" Multiplicity="1" />
+    <End Role="PurchaseChallanDetails" Type="Self.PurchaseChallanDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PurchaseChallan">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PurchaseChallanDetails">
+        <PropertyRef Name="PurchaseChallanId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseReceive_PurchaseChallan">
+    <End Role="PurchaseChallan" Type="Self.PurchaseChallan" Multiplicity="1" />
+    <End Role="PurchaseReceive" Type="Self.PurchaseReceive" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PurchaseChallan">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PurchaseReceive">
+        <PropertyRef Name="ChallanId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseReceiveDetails_PurchaseChallanDetails">
+    <End Role="PurchaseChallanDetails" Type="Self.PurchaseChallanDetail" Multiplicity="1" />
+    <End Role="PurchaseReceiveDetails" Type="Self.PurchaseReceiveDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PurchaseChallanDetails">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PurchaseReceiveDetails">
+        <PropertyRef Name="PurchaseChallanDetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseReceiveDetails_PurchaseReceive1">
+    <End Role="PurchaseReceive" Type="Self.PurchaseReceive" Multiplicity="1" />
+    <End Role="PurchaseReceiveDetails" Type="Self.PurchaseReceiveDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PurchaseReceive">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PurchaseReceiveDetails">
+        <PropertyRef Name="PurchaseReceiveId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseReturn_PurchaseReceive1">
+    <End Role="PurchaseReceive" Type="Self.PurchaseReceive" Multiplicity="1" />
+    <End Role="PurchaseReturn" Type="Self.PurchaseReturn" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PurchaseReceive">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PurchaseReturn">
+        <PropertyRef Name="PurchaseReceiveId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseReturnDetails_PurchaseReceiveDetails">
+    <End Role="PurchaseReceiveDetails" Type="Self.PurchaseReceiveDetail" Multiplicity="1" />
+    <End Role="PurchaseReturnDetails" Type="Self.PurchaseReturnDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PurchaseReceiveDetails">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PurchaseReturnDetails">
+        <PropertyRef Name="PurchaseReceiveDetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseReturnDetails_PurchaseReturn">
+    <End Role="PurchaseReturn" Type="Self.PurchaseReturn" Multiplicity="1" />
+    <End Role="PurchaseReturnDetails" Type="Self.PurchaseReturnDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PurchaseReturn">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PurchaseReturnDetails">
+        <PropertyRef Name="PurchaseReturnId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="POS_Inventory" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="ProductCategories" EntityType="Self.ProductCategory" />
+    <EntitySet Name="ProductLedgers" EntityType="Self.ProductLedger" />
+    <EntitySet Name="ProductLedgerDetails" EntityType="Self.ProductLedgerDetail" />
+    <EntitySet Name="ProductPrices" EntityType="Self.ProductPrice" />
+    <EntitySet Name="ProductSections" EntityType="Self.ProductSection" />
+    <EntitySet Name="ProductStores" EntityType="Self.ProductStore" />
+    <EntitySet Name="ProductUnits" EntityType="Self.ProductUnit" />
+    <EntitySet Name="PurchaseChallans" EntityType="Self.PurchaseChallan" />
+    <EntitySet Name="PurchaseChallanDetails" EntityType="Self.PurchaseChallanDetail" />
+    <EntitySet Name="PurchaseReceives" EntityType="Self.PurchaseReceive" />
+    <EntitySet Name="PurchaseReceiveDetails" EntityType="Self.PurchaseReceiveDetail" />
+    <EntitySet Name="PurchaseReturns" EntityType="Self.PurchaseReturn" />
+    <EntitySet Name="PurchaseReturnDetails" EntityType="Self.PurchaseReturnDetail" />
+    <EntitySet Name="Suppliers" EntityType="Self.Supplier" />
+    <AssociationSet Name="FK_Product_ProductCategory" Association="Self.FK_Product_ProductCategory">
+      <End Role="ProductCategory" EntitySet="ProductCategories" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseChallanDetails_Product1" Association="Self.FK_PurchaseChallanDetails_Product1">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="PurchaseChallanDetails" EntitySet="PurchaseChallanDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductLedgerDetails_ProductLedger" Association="Self.FK_ProductLedgerDetails_ProductLedger">
+      <End Role="ProductLedger" EntitySet="ProductLedgers" />
+      <End Role="ProductLedgerDetails" EntitySet="ProductLedgerDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductPrice_PurchaseReceiveDetails" Association="Self.FK_ProductPrice_PurchaseReceiveDetails">
+      <End Role="PurchaseReceiveDetails" EntitySet="PurchaseReceiveDetails" />
+      <End Role="ProductPrice" EntitySet="ProductPrices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductStoreDetails_ProductSection" Association="Self.FK_ProductStoreDetails_ProductSection">
+      <End Role="ProductSection" EntitySet="ProductSections" />
+      <End Role="ProductStore" EntitySet="ProductStores" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductStore_ProductUnit" Association="Self.FK_ProductStore_ProductUnit">
+      <End Role="ProductUnit" EntitySet="ProductUnits" />
+      <End Role="ProductStore" EntitySet="ProductStores" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductStoreDetails_PurchaseReceiveDetails" Association="Self.FK_ProductStoreDetails_PurchaseReceiveDetails">
+      <End Role="PurchaseReceiveDetails" EntitySet="PurchaseReceiveDetails" />
+      <End Role="ProductStore" EntitySet="ProductStores" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseChallan_Supplier" Association="Self.FK_PurchaseChallan_Supplier">
+      <End Role="Supplier" EntitySet="Suppliers" />
+      <End Role="PurchaseChallan" EntitySet="PurchaseChallans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseChallanDetails_PurchaseChallan" Association="Self.FK_PurchaseChallanDetails_PurchaseChallan">
+      <End Role="PurchaseChallan" EntitySet="PurchaseChallans" />
+      <End Role="PurchaseChallanDetails" EntitySet="PurchaseChallanDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseReceive_PurchaseChallan" Association="Self.FK_PurchaseReceive_PurchaseChallan">
+      <End Role="PurchaseChallan" EntitySet="PurchaseChallans" />
+      <End Role="PurchaseReceive" EntitySet="PurchaseReceives" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseReceiveDetails_PurchaseChallanDetails" Association="Self.FK_PurchaseReceiveDetails_PurchaseChallanDetails">
+      <End Role="PurchaseChallanDetails" EntitySet="PurchaseChallanDetails" />
+      <End Role="PurchaseReceiveDetails" EntitySet="PurchaseReceiveDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseReceiveDetails_PurchaseReceive1" Association="Self.FK_PurchaseReceiveDetails_PurchaseReceive1">
+      <End Role="PurchaseReceive" EntitySet="PurchaseReceives" />
+      <End Role="PurchaseReceiveDetails" EntitySet="PurchaseReceiveDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseReturn_PurchaseReceive1" Association="Self.FK_PurchaseReturn_PurchaseReceive1">
+      <End Role="PurchaseReceive" EntitySet="PurchaseReceives" />
+      <End Role="PurchaseReturn" EntitySet="PurchaseReturns" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseReturnDetails_PurchaseReceiveDetails" Association="Self.FK_PurchaseReturnDetails_PurchaseReceiveDetails">
+      <End Role="PurchaseReceiveDetails" EntitySet="PurchaseReceiveDetails" />
+      <End Role="PurchaseReturnDetails" EntitySet="PurchaseReturnDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseReturnDetails_PurchaseReturn" Association="Self.FK_PurchaseReturnDetails_PurchaseReturn">
+      <End Role="PurchaseReturn" EntitySet="PurchaseReturns" />
+      <End Role="PurchaseReturnDetails" EntitySet="PurchaseReturnDetails" />
+    </AssociationSet>
+    <FunctionImport Name="USP_GetAllProductStoreInformation" />
+    <FunctionImport Name="USP_GetAllPurchaseChallan" ReturnType="Collection(Models.USP_GetAllPurchaseChallan_Result)" />
+    <FunctionImport Name="USP_GetAllPurchaseChallanDetail" ReturnType="Collection(Models.USP_GetAllPurchaseChallanDetail_Result)">
+      <Parameter Name="PurchaseChallanId" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="USP_GetAllPurchaseReceive" ReturnType="Collection(Models.USP_GetAllPurchaseReceive_Result)" />
+    <FunctionImport Name="USP_GetAllPurchaseReceiveDetail" ReturnType="Collection(Models.USP_GetAllPurchaseReceiveDetail_Result)">
+      <Parameter Name="PurchaseReceiveId" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="USP_GetProductSearchResult" ReturnType="Collection(Models.USP_GetProductSearchResult_Result)">
+      <Parameter Name="ProductId" Mode="In" Type="Int64" />
+      <Parameter Name="ProductName" Mode="In" Type="String" />
+      <Parameter Name="ProductCategoryId" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="USP_GetProductStoreInformation" ReturnType="Collection(Models.USP_GetProductStoreInformation_Result)">
+      <Parameter Name="PurchaseReceiveDetailId" Mode="In" Type="Int64" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="USP_GetAllPurchaseChallan_Result">
+    <Property Type="Int64" Name="Id" Nullable="false" />
+    <Property Type="String" Name="ChallanNumber" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="ChallanDate" Nullable="false" Precision="23" />
+    <Property Type="Int64" Name="SupplierId" Nullable="false" />
+    <Property Type="String" Name="SupplierName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="SupplierCode" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="OrderBy" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="Description" Nullable="true" MaxLength="Max" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="DateTime" Name="SetOn" Nullable="false" Precision="23" />
+    <Property Type="Int64" Name="SetBy" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="USP_GetAllPurchaseChallanDetail_Result">
+    <Property Type="Int64" Name="Id" Nullable="false" />
+    <Property Type="Int64" Name="PurchaseChallanId" Nullable="false" />
+    <Property Type="String" Name="ChallanNumber" Nullable="true" MaxLength="20" />
+    <Property Type="Int64" Name="ProductId" Nullable="false" />
+    <Property Type="String" Name="ProductName" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="ProductCategoryId" Nullable="true" />
+    <Property Type="String" Name="ProductCategoryName" Nullable="true" MaxLength="100" />
+    <Property Type="Decimal" Name="ProductUnitPrice" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="ProductQuantity" Nullable="false" />
+    <Property Type="Decimal" Name="TotalPrice" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="Description" Nullable="true" MaxLength="Max" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="DateTime" Name="SetOn" Nullable="false" Precision="23" />
+    <Property Type="Int64" Name="SetBy" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="USP_GetAllPurchaseReceive_Result">
+    <Property Type="Int64" Name="Id" Nullable="false" />
+    <Property Type="String" Name="ReceiveNumber" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="ReceiveDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="ReceivedBy" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="ReceivedFrom" Nullable="true" MaxLength="200" />
+    <Property Type="Int64" Name="ChallanId" Nullable="false" />
+    <Property Type="String" Name="ChallanNumber" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="ChallanDate" Nullable="true" Precision="23" />
+    <Property Type="Int64" Name="SupplierId" Nullable="true" />
+    <Property Type="String" Name="SupplierName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="SupplierCode" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="Description" Nullable="true" MaxLength="Max" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="DateTime" Name="SetOn" Nullable="false" Precision="23" />
+    <Property Type="Int64" Name="SetBy" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="USP_GetAllPurchaseReceiveDetail_Result">
+    <Property Type="Int64" Name="Id" Nullable="false" />
+    <Property Type="Int64" Name="PurchaseReceiveId" Nullable="false" />
+    <Property Type="Int64" Name="PurchaseChallanDetailId" Nullable="false" />
+    <Property Type="Int64" Name="ProductId" Nullable="false" />
+    <Property Type="String" Name="ProductName" Nullable="false" MaxLength="100" />
+    <Property Type="Int64" Name="SupplierId" Nullable="false" />
+    <Property Type="String" Name="SupplierName" Nullable="false" MaxLength="100" />
+    <Property Type="Int64" Name="ProductCategoryId" Nullable="false" />
+    <Property Type="String" Name="ProductCategoryName" Nullable="false" MaxLength="100" />
+    <Property Type="Decimal" Name="ProductUnitPrice" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="ProductQuantity" Nullable="false" />
+    <Property Type="Decimal" Name="TotalPrice" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="String" Name="Description" Nullable="true" MaxLength="Max" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="DateTime" Name="SetOn" Nullable="false" Precision="23" />
+    <Property Type="Int64" Name="SetBy" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="USP_GetProductSearchResult_Result">
+    <Property Type="Int64" Name="ProductId" Nullable="false" />
+    <Property Type="String" Name="ProductName" Nullable="false" MaxLength="100" />
+    <Property Type="Int64" Name="ProductCategoryId" Nullable="false" />
+    <Property Type="String" Name="ProductCategoryName" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="PurchaseReceiveId" Nullable="true" />
+    <Property Type="DateTime" Name="ReceiveDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="ReceiveNumber" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="PurchaseReceiveDetailId" Nullable="true" />
+    <Property Type="Decimal" Name="ProductUnitPrice" Nullable="false" Precision="19" Scale="2" />
+    <Property Type="Decimal" Name="DiscountInPercentage" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="ProductQuantity" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="USP_GetProductStoreInformation_Result">
+    <Property Type="Int64" Name="Id" Nullable="false" />
+    <Property Type="Int64" Name="PurchaseReceiveDetailId" Nullable="false" />
+    <Property Type="Int64" Name="ProductId" Nullable="false" />
+    <Property Type="Int32" Name="Serial" Nullable="false" />
+    <Property Type="Int64" Name="ProductUnitId" Nullable="true" />
+    <Property Type="String" Name="ProductUnitName" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="ProductSectionId" Nullable="true" />
+    <Property Type="String" Name="ProductSectionName" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="ProductQuantity" Nullable="false" />
+    <Property Type="String" Name="ProductSizeCode" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="ProductSizeNumber" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="ProductSizeAge" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="ProductColor" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="ProductStyle" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="Description" Nullable="true" MaxLength="Max" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="DateTime" Name="SetOn" Nullable="false" Precision="23" />
+    <Property Type="Int64" Name="SetBy" Nullable="false" />
+  </ComplexType>
+</Schema>

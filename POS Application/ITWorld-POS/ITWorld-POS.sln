@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS", "POS\POS.csproj", "{0950BE70-50F8-44EB-ABD3-F1D6E99D450C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS.BLL", "POS.BLL\POS.BLL.csproj", "{DCD9D01E-0434-49EF-A622-FDD8679C3633}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS.DAL", "POS.DAL\POS.DAL.csproj", "{A5AEE045-06A1-4A9C-8069-10948188B6B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS.UTILS", "POS.UTILS\POS.UTILS.csproj", "{F7436C83-100A-41F1-A2B6-D5137CAF3CB9}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://it-worldbd.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = POS\\POS.csproj
+		SccProjectName1 = POS
+		SccLocalPath1 = POS
+		SccProjectUniqueName2 = POS.BLL\\POS.BLL.csproj
+		SccProjectName2 = POS.BLL
+		SccLocalPath2 = POS.BLL
+		SccProjectUniqueName3 = POS.DAL\\POS.DAL.csproj
+		SccProjectName3 = POS.DAL
+		SccLocalPath3 = POS.DAL
+		SccProjectUniqueName4 = POS.UTILS\\POS.UTILS.csproj
+		SccProjectName4 = POS.UTILS
+		SccLocalPath4 = POS.UTILS
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0950BE70-50F8-44EB-ABD3-F1D6E99D450C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0950BE70-50F8-44EB-ABD3-F1D6E99D450C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0950BE70-50F8-44EB-ABD3-F1D6E99D450C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0950BE70-50F8-44EB-ABD3-F1D6E99D450C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCD9D01E-0434-49EF-A622-FDD8679C3633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCD9D01E-0434-49EF-A622-FDD8679C3633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCD9D01E-0434-49EF-A622-FDD8679C3633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCD9D01E-0434-49EF-A622-FDD8679C3633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5AEE045-06A1-4A9C-8069-10948188B6B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5AEE045-06A1-4A9C-8069-10948188B6B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5AEE045-06A1-4A9C-8069-10948188B6B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5AEE045-06A1-4A9C-8069-10948188B6B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7436C83-100A-41F1-A2B6-D5137CAF3CB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7436C83-100A-41F1-A2B6-D5137CAF3CB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7436C83-100A-41F1-A2B6-D5137CAF3CB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7436C83-100A-41F1-A2B6-D5137CAF3CB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

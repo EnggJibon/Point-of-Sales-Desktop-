@@ -1,0 +1,220 @@
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.exe.config
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.exe
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.pdb
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\EntityFramework.dll
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\EntityFramework.SqlServer.dll
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\MetroFramework.Design.dll
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\MetroFramework.dll
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\MetroFramework.Fonts.dll
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\Ninject.dll
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.BLL.dll
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.DAL.dll
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.UTILS.dll
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\AutoMapper.dll
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.BLL.pdb
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.DAL.pdb
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.UTILS.pdb
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\EntityFramework.xml
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\EntityFramework.SqlServer.xml
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\Ninject.xml
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\AutoMapper.pdb
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\AutoMapper.xml
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.csprojResolveAssemblyReference.cache
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.ProductSectionForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.ProductUnitForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.ProductForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.ProductPriceForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.PurchaseReceiveDetailsForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.PurchaseChallanDetailsForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.PurchaseReceiveForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.PurchaseChallanForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.ProductStoreForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.ProductCategoryForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.PurchaseReturnDetailsForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.PurchaseReturnForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.SupplierInformationForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Properties.Resources.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Sales.ProductSearchForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Sales.SaleForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.SaleDetailsForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Sales.SalePaymentForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Sales.SaleReturnReceiveForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Security.LoginForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Security.ModuleForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Security.EmployeeInformationForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Security.UserInformationForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Security.RoleForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Security.RoleWiseScreenPermissionForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Security.ScreenForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Security.UserTypeForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Shared.BaseForm.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Shared.HomePage.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.csproj.GenerateResource.Cache
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.exe
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.pdb
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\AutoMapper.Net4.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\AutoMapper.Net4.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.exe.config
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.exe
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\EntityFramework.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\EntityFramework.SqlServer.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\MetroFramework.Design.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\MetroFramework.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\MetroFramework.Fonts.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\Ninject.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.BLL.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.DAL.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.UTILS.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\AutoMapper.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.BLL.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.DAL.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.UTILS.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\EntityFramework.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\EntityFramework.SqlServer.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\Ninject.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\AutoMapper.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\AutoMapper.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.csprojResolveAssemblyReference.cache
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.ProductSectionForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.ProductUnitForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.ProductForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.ProductPriceForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.PurchaseReceiveDetailsForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.PurchaseChallanDetailsForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.PurchaseReceiveForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.PurchaseChallanForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.ProductStoreForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.ProductCategoryForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.PurchaseReturnDetailsForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.PurchaseReturnForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.SupplierInformationForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Properties.Resources.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Sales.ProductSearchForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Sales.SaleForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.SaleDetailsForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Sales.SalePaymentForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Sales.SaleReturnReceiveForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Security.LoginForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Security.ModuleForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Security.EmployeeInformationForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Security.UserInformationForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Security.RoleForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Security.RoleWiseScreenPermissionForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Security.ScreenForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Security.UserTypeForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Shared.BaseForm.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Shared.HomePage.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.csproj.GenerateResource.Cache
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.exe
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.exe.config
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.exe
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\AutoMapper.Net4.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.exe
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\EntityFramework.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\EntityFramework.SqlServer.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\MetroFramework.Design.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\MetroFramework.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\MetroFramework.Fonts.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\Ninject.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.BLL.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.DAL.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.UTILS.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\AutoMapper.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.BLL.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.DAL.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\POS.UTILS.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\EntityFramework.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\EntityFramework.SqlServer.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\Ninject.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\AutoMapper.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\bin\Debug\AutoMapper.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.csprojResolveAssemblyReference.cache
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.ProductSectionForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.ProductUnitForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.ProductForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.ProductPriceForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.PurchaseReceiveDetailsForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.PurchaseChallanDetailsForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.PurchaseReceiveForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.PurchaseChallanForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.ProductStoreForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.ProductCategoryForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.PurchaseReturnDetailsForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.PurchaseReturnForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.SupplierInformationForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Properties.Resources.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Sales.ProductSearchForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Sales.SaleForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Inventory.SaleDetailsForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Sales.SalePaymentForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Sales.SaleReturnReceiveForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Security.LoginForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Security.ModuleForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Security.EmployeeInformationForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Security.UserInformationForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Security.RoleForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Security.RoleWiseScreenPermissionForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Security.ScreenForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Security.UserTypeForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Shared.BaseForm.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.Shared.HomePage.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS\obj\Debug\POS.csproj.GenerateResource.Cache
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\bin\Debug\POS.exe.config
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.exe
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.pdb
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\bin\Debug\AutoMapper.Net4.dll
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\bin\Debug\POS.exe
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\bin\Debug\POS.pdb
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\bin\Debug\EntityFramework.dll
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\bin\Debug\MetroFramework.Design.dll
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\bin\Debug\MetroFramework.dll
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\bin\Debug\MetroFramework.Fonts.dll
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\bin\Debug\Ninject.dll
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\bin\Debug\POS.BLL.dll
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\bin\Debug\POS.DAL.dll
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\bin\Debug\POS.UTILS.dll
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\bin\Debug\AutoMapper.dll
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\bin\Debug\POS.BLL.pdb
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\bin\Debug\POS.DAL.pdb
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\bin\Debug\POS.UTILS.pdb
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\bin\Debug\EntityFramework.xml
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\bin\Debug\Ninject.xml
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\bin\Debug\AutoMapper.pdb
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\bin\Debug\AutoMapper.xml
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.csprojResolveAssemblyReference.cache
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Inventory.ProductSectionForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Inventory.ProductUnitForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Inventory.ProductForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Inventory.ProductPriceForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Inventory.PurchaseReceiveDetailsForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Inventory.PurchaseChallanDetailsForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Inventory.PurchaseReceiveForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Inventory.PurchaseChallanForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Inventory.ProductStoreForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Inventory.ProductCategoryForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Inventory.PurchaseReturnDetailsForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Inventory.PurchaseReturnForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Inventory.SupplierInformationForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Properties.Resources.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Sales.ProductSearchForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Sales.SaleForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Inventory.SaleDetailsForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Sales.SalePaymentForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Sales.SaleReturnReceiveForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Security.LoginForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Security.ModuleForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Security.EmployeeInformationForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Security.UserInformationForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Security.RoleForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Security.RoleWiseScreenPermissionForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Security.ScreenForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Security.UserTypeForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Shared.BaseForm.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.Shared.HomePage.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS\obj\Debug\POS.csproj.GenerateResource.Cache

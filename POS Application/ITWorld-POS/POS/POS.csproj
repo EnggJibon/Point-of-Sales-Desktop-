@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0950BE70-50F8-44EB-ABD3-F1D6E99D450C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POS</RootNamespace>
+    <AssemblyName>POS</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\packages\WinForms-ModernUI.1.3.0.1\lib\net45\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\packages\WinForms-ModernUI.1.3.0.1\lib\net45\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\packages\WinForms-ModernUI.1.3.0.1\lib\net45\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Inventory\ProductSectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\ProductSectionForm.Designer.cs">
+      <DependentUpon>ProductSectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\ProductUnitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\ProductUnitForm.Designer.cs">
+      <DependentUpon>ProductUnitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\ProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\ProductForm.Designer.cs">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\ProductPriceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\ProductPriceForm.Designer.cs">
+      <DependentUpon>ProductPriceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\PurchaseReceiveDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\PurchaseReceiveDetailsForm.Designer.cs">
+      <DependentUpon>PurchaseReceiveDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\PurchaseChallanDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\PurchaseChallanDetailsForm.Designer.cs">
+      <DependentUpon>PurchaseChallanDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\PurchaseReceiveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\PurchaseReceiveForm.Designer.cs">
+      <DependentUpon>PurchaseReceiveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\PurchaseChallanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\PurchaseChallanForm.Designer.cs">
+      <DependentUpon>PurchaseChallanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\ProductStoreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\ProductStoreForm.Designer.cs">
+      <DependentUpon>ProductStoreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\ProductCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\ProductCategoryForm.Designer.cs">
+      <DependentUpon>ProductCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\PurchaseReturnDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\PurchaseReturnDetailsForm.Designer.cs">
+      <DependentUpon>PurchaseReturnDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\PurchaseReturnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\PurchaseReturnForm.Designer.cs">
+      <DependentUpon>PurchaseReturnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\SupplierInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\SupplierInformationForm.Designer.cs">
+      <DependentUpon>SupplierInformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Sales\ProductSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\ProductSearchForm.Designer.cs">
+      <DependentUpon>ProductSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SaleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SaleForm.Designer.cs">
+      <DependentUpon>SaleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SaleDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SaleDetailsForm.Designer.cs">
+      <DependentUpon>SaleDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SalePaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SalePaymentForm.Designer.cs">
+      <DependentUpon>SalePaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SaleReturnReceiveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SaleReturnReceiveForm.Designer.cs">
+      <DependentUpon>SaleReturnReceiveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\LoginForm.designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\ModuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\ModuleForm.Designer.cs">
+      <DependentUpon>ModuleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\EmployeeInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\EmployeeInformationForm.Designer.cs">
+      <DependentUpon>EmployeeInformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\UserInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\UserInformationForm.Designer.cs">
+      <DependentUpon>UserInformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\RoleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\RoleForm.Designer.cs">
+      <DependentUpon>RoleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\RoleWiseScreenPermissionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\RoleWiseScreenPermissionForm.Designer.cs">
+      <DependentUpon>RoleWiseScreenPermissionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\ScreenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\ScreenForm.Designer.cs">
+      <DependentUpon>ScreenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\UserTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\UserTypeForm.Designer.cs">
+      <DependentUpon>UserTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shared\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shared\HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Inventory\ProductSectionForm.resx">
+      <DependentUpon>ProductSectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\ProductUnitForm.resx">
+      <DependentUpon>ProductUnitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\ProductForm.resx">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\ProductPriceForm.resx">
+      <DependentUpon>ProductPriceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\PurchaseReceiveDetailsForm.resx">
+      <DependentUpon>PurchaseReceiveDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\PurchaseChallanDetailsForm.resx">
+      <DependentUpon>PurchaseChallanDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\PurchaseReceiveForm.resx">
+      <DependentUpon>PurchaseReceiveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\PurchaseChallanForm.resx">
+      <DependentUpon>PurchaseChallanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\ProductStoreForm.resx">
+      <DependentUpon>ProductStoreForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\ProductCategoryForm.resx">
+      <DependentUpon>ProductCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\PurchaseReturnDetailsForm.resx">
+      <DependentUpon>PurchaseReturnDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\PurchaseReturnForm.resx">
+      <DependentUpon>PurchaseReturnForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\SupplierInformationForm.resx">
+      <DependentUpon>SupplierInformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <EmbeddedResource Include="Sales\ProductSearchForm.resx">
+      <DependentUpon>ProductSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SaleForm.resx">
+      <DependentUpon>SaleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SaleDetailsForm.resx">
+      <DependentUpon>SaleDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SalePaymentForm.resx">
+      <DependentUpon>SalePaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SaleReturnReceiveForm.resx">
+      <DependentUpon>SaleReturnReceiveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\ModuleForm.resx">
+      <DependentUpon>ModuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\EmployeeInformationForm.resx">
+      <DependentUpon>EmployeeInformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\UserInformationForm.resx">
+      <DependentUpon>UserInformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\RoleForm.resx">
+      <DependentUpon>RoleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\RoleWiseScreenPermissionForm.resx">
+      <DependentUpon>RoleWiseScreenPermissionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\ScreenForm.resx">
+      <DependentUpon>ScreenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\UserTypeForm.resx">
+      <DependentUpon>UserTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shared\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shared\HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\POS.BLL\POS.BLL.csproj">
+      <Project>{dcd9d01e-0434-49ef-a622-fdd8679c3633}</Project>
+      <Name>POS.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POS.DAL\POS.DAL.csproj">
+      <Project>{a5aee045-06a1-4a9c-8069-10948188b6b7}</Project>
+      <Name>POS.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POS.UTILS\POS.UTILS.csproj">
+      <Project>{f7436c83-100a-41f1-a2b6-d5137caf3cb9}</Project>
+      <Name>POS.UTILS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slide0019_background.jpg" />
+    <None Include="Resources\Alien Ink 2560X1600 Abstract Background1.jpg" />
+    <None Include="Resources\19561211.jpg" />
+    <None Include="Resources\admin.png" />
+    <None Include="Resources\admin2.jpg" />
+    <None Include="Resources\admin21.jpg" />
+    <Content Include="Resources\automate-your-attendance-process-1-638.jpg" />
+    <Content Include="Resources\Dashboard-background.png" />
+    <Content Include="Resources\dashboard.jpg" />
+    <Content Include="Resources\employee-attendance.jpg" />
+    <None Include="Resources\image.png" />
+    <Content Include="Resources\images-iems-parent-icon-250x250.png" />
+    <None Include="Resources\imagesbc-31.jpg" />
+    <None Include="Resources\imagesbc-41.jpg" />
+    <None Include="Resources\imagesbc-32.jpg" />
+    <None Include="Resources\images9.png" />
+    <None Include="Resources\imagesbc-8.jpg" />
+    <Content Include="Resources\Lacy+Quartz+Wall+Clock.jpg" />
+    <Content Include="Resources\Login-icon.png" />
+    <Content Include="Resources\Login-icon1.png" />
+    <Content Include="Resources\Login-icon2.png" />
+    <Content Include="Resources\Ok-icon.png" />
+    <Content Include="Resources\Ok-icon1.png" />
+    <None Include="Resources\slide1_mobile_point_of_sale.jpg" />
+    <None Include="Resources\shopping-bags-best.jpg" />
+    <None Include="Resources\online-shopping-cart.jpg" />
+    <None Include="Resources\point_of_sale_HEADER.png" />
+    <None Include="Resources\point_of_sale_HEADER1.png" />
+    <None Include="Resources\pos-icon.png" />
+    <Content Include="Resources\skph451b.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

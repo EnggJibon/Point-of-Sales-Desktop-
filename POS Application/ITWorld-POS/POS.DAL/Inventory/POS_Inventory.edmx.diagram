@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5448fa05fb684452b5bc5025934b6947" Name="Diagram1">
+        <EntityTypeShape EntityType="Models.Product" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.ProductCategory" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.ProductLedger" Width="1.5" PointX="0.75" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.ProductLedgerDetail" Width="1.5" PointX="3" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.ProductPrice" Width="1.5" PointX="9.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.ProductSection" Width="1.5" PointX="10.5" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.ProductStore" Width="1.5" PointX="12.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.ProductUnit" Width="1.5" PointX="10.5" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.PurchaseChallan" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.PurchaseChallanDetail" Width="1.5" PointX="5.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.PurchaseReceive" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.PurchaseReceiveDetail" Width="1.5" PointX="7.5" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.PurchaseReturn" Width="1.5" PointX="7.5" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.PurchaseReturnDetail" Width="1.5" PointX="9.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Models.Supplier" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="Models.FK_Product_ProductCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_PurchaseChallanDetails_Product1" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ProductLedgerDetails_ProductLedger" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ProductPrice_PurchaseReceiveDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ProductStoreDetails_ProductSection" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ProductStore_ProductUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_ProductStoreDetails_PurchaseReceiveDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_PurchaseChallan_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_PurchaseChallanDetails_PurchaseChallan" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_PurchaseReceive_PurchaseChallan" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_PurchaseReceiveDetails_PurchaseChallanDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_PurchaseReceiveDetails_PurchaseReceive1" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_PurchaseReturn_PurchaseReceive1" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_PurchaseReturnDetails_PurchaseReceiveDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="Models.FK_PurchaseReturnDetails_PurchaseReturn" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

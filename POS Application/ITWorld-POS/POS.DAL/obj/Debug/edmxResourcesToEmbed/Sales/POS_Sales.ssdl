@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Models.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Sale">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SaleDate" Type="datetime" Nullable="false" />
+    <Property Name="SaleInvoiceId" Type="bigint" Nullable="false" />
+    <Property Name="SaleInvoiceDate" Type="datetime" Nullable="false" />
+    <Property Name="TotalSalePrice" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="DiscountInPercentage" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="DiscountAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="VATInPercentage" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="VATAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ServiceCharge" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="NetAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="SaleBy" Type="varchar" MaxLength="200" />
+    <Property Name="Description" Type="text" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="SetOn" Type="datetime" Nullable="false" />
+    <Property Name="SetBy" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SaleDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SaleId" Type="bigint" Nullable="false" />
+    <Property Name="ProductId" Type="bigint" Nullable="false" />
+    <Property Name="ProductQuantity" Type="int" Nullable="false" />
+    <Property Name="ProductUnitPrice" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ProductDiscountInPercentage" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ProductDiscountAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ProductTotalPrice" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Description" Type="text" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="SetOn" Type="datetime" Nullable="false" />
+    <Property Name="SetBy" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SalePayment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SaleId" Type="bigint" Nullable="false" />
+    <Property Name="NetAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ReceivedCashAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ReceivedCardAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ReceivedSaleReturnAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ReceivedSaleReturnId" Type="bigint" />
+    <Property Name="DiscountInPercentageForCard" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="DiscountAmountForCard" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="BankIdForCard" Type="bigint" />
+    <Property Name="CardType" Type="varchar" MaxLength="20" />
+    <Property Name="CardNo" Type="varchar" MaxLength="30" />
+    <Property Name="Description" Type="text" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="SetOn" Type="datetime" Nullable="false" />
+    <Property Name="SetBy" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SaleReturnReceive">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SaleReturnDate" Type="datetime" Nullable="false" />
+    <Property Name="SaleId" Type="bigint" Nullable="false" />
+    <Property Name="SaleDate" Type="datetime" Nullable="false" />
+    <Property Name="SaleInvoiceId" Type="bigint" Nullable="false" />
+    <Property Name="TotalSalePrice" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="VATInPercentage" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="VATInAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="NetAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="SaleReturnBy" Type="varchar" MaxLength="200" />
+    <Property Name="Description" Type="text" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="SetOn" Type="datetime" Nullable="false" />
+    <Property Name="SetBy" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SaleReturnReceiveDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SaleReturnId" Type="bigint" Nullable="false" />
+    <Property Name="ReferenceSaleId" Type="bigint" Nullable="false" />
+    <Property Name="ProductId" Type="bigint" Nullable="false" />
+    <Property Name="ProductUnitPrice" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ProductQuantity" Type="int" Nullable="false" />
+    <Property Name="ProductTotalPrice" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Description" Type="text" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="SetOn" Type="datetime" Nullable="false" />
+    <Property Name="SetBy" Type="bigint" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_SaleDetails_Sale">
+    <End Role="Sale" Type="Self.Sale" Multiplicity="1" />
+    <End Role="SaleDetails" Type="Self.SaleDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sale">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SaleDetails">
+        <PropertyRef Name="SaleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalePayment_Sale">
+    <End Role="Sale" Type="Self.Sale" Multiplicity="1" />
+    <End Role="SalePayment" Type="Self.SalePayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sale">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SalePayment">
+        <PropertyRef Name="SaleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SaleReturnReceive_Sale">
+    <End Role="Sale" Type="Self.Sale" Multiplicity="1" />
+    <End Role="SaleReturnReceive" Type="Self.SaleReturnReceive" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sale">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SaleReturnReceive">
+        <PropertyRef Name="SaleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SaleReturnReceiveDetails_SaleReturnReceive">
+    <End Role="SaleReturnReceive" Type="Self.SaleReturnReceive" Multiplicity="1" />
+    <End Role="SaleReturnReceiveDetails" Type="Self.SaleReturnReceiveDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SaleReturnReceive">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SaleReturnReceiveDetails">
+        <PropertyRef Name="SaleReturnId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ModelsStoreContainer">
+    <EntitySet Name="Sale" EntityType="Self.Sale" Schema="Sales" store:Type="Tables" />
+    <EntitySet Name="SaleDetails" EntityType="Self.SaleDetails" Schema="Sales" store:Type="Tables" />
+    <EntitySet Name="SalePayment" EntityType="Self.SalePayment" Schema="Sales" store:Type="Tables" />
+    <EntitySet Name="SaleReturnReceive" EntityType="Self.SaleReturnReceive" Schema="Sales" store:Type="Tables" />
+    <EntitySet Name="SaleReturnReceiveDetails" EntityType="Self.SaleReturnReceiveDetails" Schema="Sales" store:Type="Tables" />
+    <AssociationSet Name="FK_SaleDetails_Sale" Association="Self.FK_SaleDetails_Sale">
+      <End Role="Sale" EntitySet="Sale" />
+      <End Role="SaleDetails" EntitySet="SaleDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalePayment_Sale" Association="Self.FK_SalePayment_Sale">
+      <End Role="Sale" EntitySet="Sale" />
+      <End Role="SalePayment" EntitySet="SalePayment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SaleReturnReceive_Sale" Association="Self.FK_SaleReturnReceive_Sale">
+      <End Role="Sale" EntitySet="Sale" />
+      <End Role="SaleReturnReceive" EntitySet="SaleReturnReceive" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SaleReturnReceiveDetails_SaleReturnReceive" Association="Self.FK_SaleReturnReceiveDetails_SaleReturnReceive">
+      <End Role="SaleReturnReceive" EntitySet="SaleReturnReceive" />
+      <End Role="SaleReturnReceiveDetails" EntitySet="SaleReturnReceiveDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

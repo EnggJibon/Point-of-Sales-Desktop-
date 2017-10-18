@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Models" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Sale">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SaleDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SaleInvoiceId" Type="Int64" Nullable="false" />
+    <Property Name="SaleInvoiceDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TotalSalePrice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="DiscountInPercentage" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="DiscountAmount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="VATInPercentage" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="VATAmount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ServiceCharge" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="NetAmount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="SaleBy" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="SetOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SetBy" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="SaleDetails" Relationship="Self.FK_SaleDetails_Sale" FromRole="Sale" ToRole="SaleDetails" />
+    <NavigationProperty Name="SalePayments" Relationship="Self.FK_SalePayment_Sale" FromRole="Sale" ToRole="SalePayment" />
+    <NavigationProperty Name="SaleReturnReceives" Relationship="Self.FK_SaleReturnReceive_Sale" FromRole="Sale" ToRole="SaleReturnReceive" />
+  </EntityType>
+  <EntityType Name="SaleDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SaleId" Type="Int64" Nullable="false" />
+    <Property Name="ProductId" Type="Int64" Nullable="false" />
+    <Property Name="ProductQuantity" Type="Int32" Nullable="false" />
+    <Property Name="ProductUnitPrice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ProductDiscountInPercentage" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ProductDiscountAmount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ProductTotalPrice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="SetOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SetBy" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Sale" Relationship="Self.FK_SaleDetails_Sale" FromRole="SaleDetails" ToRole="Sale" />
+  </EntityType>
+  <EntityType Name="SalePayment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SaleId" Type="Int64" Nullable="false" />
+    <Property Name="NetAmount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ReceivedCashAmount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ReceivedCardAmount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ReceivedSaleReturnAmount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ReceivedSaleReturnId" Type="Int64" />
+    <Property Name="DiscountInPercentageForCard" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="DiscountAmountForCard" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="BankIdForCard" Type="Int64" />
+    <Property Name="CardType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CardNo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="SetOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SetBy" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Sale" Relationship="Self.FK_SalePayment_Sale" FromRole="SalePayment" ToRole="Sale" />
+  </EntityType>
+  <EntityType Name="SaleReturnReceive">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SaleReturnDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SaleId" Type="Int64" Nullable="false" />
+    <Property Name="SaleDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SaleInvoiceId" Type="Int64" Nullable="false" />
+    <Property Name="TotalSalePrice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="VATInPercentage" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="VATInAmount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="NetAmount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="SaleReturnBy" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="SetOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SetBy" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Sale" Relationship="Self.FK_SaleReturnReceive_Sale" FromRole="SaleReturnReceive" ToRole="Sale" />
+    <NavigationProperty Name="SaleReturnReceiveDetails" Relationship="Self.FK_SaleReturnReceiveDetails_SaleReturnReceive" FromRole="SaleReturnReceive" ToRole="SaleReturnReceiveDetails" />
+  </EntityType>
+  <EntityType Name="SaleReturnReceiveDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SaleReturnId" Type="Int64" Nullable="false" />
+    <Property Name="ReferenceSaleId" Type="Int64" Nullable="false" />
+    <Property Name="ProductId" Type="Int64" Nullable="false" />
+    <Property Name="ProductUnitPrice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="ProductQuantity" Type="Int32" Nullable="false" />
+    <Property Name="ProductTotalPrice" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="SetOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SetBy" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="SaleReturnReceive" Relationship="Self.FK_SaleReturnReceiveDetails_SaleReturnReceive" FromRole="SaleReturnReceiveDetails" ToRole="SaleReturnReceive" />
+  </EntityType>
+  <Association Name="FK_SaleDetails_Sale">
+    <End Role="Sale" Type="Self.Sale" Multiplicity="1" />
+    <End Role="SaleDetails" Type="Self.SaleDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sale">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SaleDetails">
+        <PropertyRef Name="SaleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalePayment_Sale">
+    <End Role="Sale" Type="Self.Sale" Multiplicity="1" />
+    <End Role="SalePayment" Type="Self.SalePayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sale">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SalePayment">
+        <PropertyRef Name="SaleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SaleReturnReceive_Sale">
+    <End Role="Sale" Type="Self.Sale" Multiplicity="1" />
+    <End Role="SaleReturnReceive" Type="Self.SaleReturnReceive" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sale">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SaleReturnReceive">
+        <PropertyRef Name="SaleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SaleReturnReceiveDetails_SaleReturnReceive">
+    <End Role="SaleReturnReceive" Type="Self.SaleReturnReceive" Multiplicity="1" />
+    <End Role="SaleReturnReceiveDetails" Type="Self.SaleReturnReceiveDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SaleReturnReceive">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SaleReturnReceiveDetails">
+        <PropertyRef Name="SaleReturnId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="POS_Sales" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Sales" EntityType="Self.Sale" />
+    <EntitySet Name="SaleDetails" EntityType="Self.SaleDetail" />
+    <EntitySet Name="SalePayments" EntityType="Self.SalePayment" />
+    <EntitySet Name="SaleReturnReceives" EntityType="Self.SaleReturnReceive" />
+    <EntitySet Name="SaleReturnReceiveDetails" EntityType="Self.SaleReturnReceiveDetail" />
+    <AssociationSet Name="FK_SaleDetails_Sale" Association="Self.FK_SaleDetails_Sale">
+      <End Role="Sale" EntitySet="Sales" />
+      <End Role="SaleDetails" EntitySet="SaleDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalePayment_Sale" Association="Self.FK_SalePayment_Sale">
+      <End Role="Sale" EntitySet="Sales" />
+      <End Role="SalePayment" EntitySet="SalePayments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SaleReturnReceive_Sale" Association="Self.FK_SaleReturnReceive_Sale">
+      <End Role="Sale" EntitySet="Sales" />
+      <End Role="SaleReturnReceive" EntitySet="SaleReturnReceives" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SaleReturnReceiveDetails_SaleReturnReceive" Association="Self.FK_SaleReturnReceiveDetails_SaleReturnReceive">
+      <End Role="SaleReturnReceive" EntitySet="SaleReturnReceives" />
+      <End Role="SaleReturnReceiveDetails" EntitySet="SaleReturnReceiveDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

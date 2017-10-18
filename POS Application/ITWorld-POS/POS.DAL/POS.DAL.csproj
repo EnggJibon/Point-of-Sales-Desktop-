@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5AEE045-06A1-4A9C-8069-10948188B6B7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POS.DAL</RootNamespace>
+    <AssemblyName>POS.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HRM\Department.cs">
+      <DependentUpon>POS_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\Designation.cs">
+      <DependentUpon>POS_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\POS_HRM.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POS_HRM.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\POS_HRM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POS_HRM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\POS_HRM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POS_HRM.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="HRM\Repository\DepartmentRepository.cs" />
+    <Compile Include="HRM\Repository\DesignationRepository.cs" />
+    <Compile Include="Inventory\POS_Inventory.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POS_Inventory.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\POS_Inventory.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POS_Inventory.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\POS_Inventory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POS_Inventory.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Product.cs">
+      <DependentUpon>POS_Inventory.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\ProductCategory.cs">
+      <DependentUpon>POS_Inventory.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\ProductLedger.cs">
+      <DependentUpon>POS_Inventory.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\ProductLedgerDetail.cs">
+      <DependentUpon>POS_Inventory.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\ProductPrice.cs">
+      <DependentUpon>POS_Inventory.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\ProductSection.cs">
+      <DependentUpon>POS_Inventory.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\ProductStore.cs">
+      <DependentUpon>POS_Inventory.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\ProductUnit.cs">
+      <DependentUpon>POS_Inventory.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\PurchaseChallan.cs">
+      <DependentUpon>POS_Inventory.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\PurchaseChallanDetail.cs">
+      <DependentUpon>POS_Inventory.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\PurchaseReceive.cs">
+      <DependentUpon>POS_Inventory.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\PurchaseReceiveDetail.cs">
+      <DependentUpon>POS_Inventory.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\PurchaseReturn.cs">
+      <DependentUpon>POS_Inventory.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\PurchaseReturnDetail.cs">
+      <DependentUpon>POS_Inventory.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Repository\ProductCategoryRepository.cs" />
+    <Compile Include="Inventory\Repository\ProductPriceRepository.cs" />
+    <Compile Include="Inventory\Repository\ProductSectionRepository.cs" />
+    <Compile Include="Inventory\Repository\ProductStoreRepository.cs" />
+    <Compile Include="Inventory\Repository\ProductRepository.cs" />
+    <Compile Include="Inventory\Repository\PurchaseReturnDetailRepository.cs" />
+    <Compile Include="Inventory\Repository\PurchaseReceiveDetailRepository.cs" />
+    <Compile Include="Inventory\Repository\PurchaseChallanDetailRepository.cs" />
+    <Compile Include="Inventory\Repository\PurchaseReceiveRepository.cs" />
+    <Compile Include="Inventory\Repository\PurchaseReturnRepository.cs" />
+    <Compile Include="Inventory\Repository\PurchaseChallanRepository.cs" />
+    <Compile Include="Inventory\Repository\SupplierRepository.cs" />
+    <Compile Include="Inventory\Repository\ProductUnitRepository.cs" />
+    <Compile Include="Inventory\Supplier.cs">
+      <DependentUpon>POS_Inventory.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\USP_GetAllPurchaseChallanDetail_Result.cs">
+      <DependentUpon>POS_Inventory.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\USP_GetAllPurchaseChallan_Result.cs">
+      <DependentUpon>POS_Inventory.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\USP_GetAllPurchaseReceiveDetail_Result.cs">
+      <DependentUpon>POS_Inventory.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\USP_GetAllPurchaseReceive_Result.cs">
+      <DependentUpon>POS_Inventory.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\USP_GetProductSearchResult_Result.cs">
+      <DependentUpon>POS_Inventory.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\USP_GetProductStoreInformation_Result.cs">
+      <DependentUpon>POS_Inventory.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sales\POS_Sales.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POS_Sales.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\POS_Sales.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POS_Sales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\POS_Sales.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POS_Sales.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\Repository\SaleDetailRepository.cs" />
+    <Compile Include="Sales\Repository\SalePaymentRepository.cs" />
+    <Compile Include="Sales\Repository\SaleReturnReceiveDetailRepository.cs" />
+    <Compile Include="Sales\Repository\SaleReturnReceiveRepository.cs" />
+    <Compile Include="Sales\Repository\SaleRepository.cs" />
+    <Compile Include="Sales\Sale.cs">
+      <DependentUpon>POS_Sales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SaleDetail.cs">
+      <DependentUpon>POS_Sales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SalePayment.cs">
+      <DependentUpon>POS_Sales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SaleReturnReceive.cs">
+      <DependentUpon>POS_Sales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SaleReturnReceiveDetail.cs">
+      <DependentUpon>POS_Sales.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\AccessLog.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\AdditionalOperationPermission.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\AdditionalScreenPermission.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Application.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\ApplicationPolicy.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\EmployeeInformation.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Menu.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Module.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\POS_Security.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POS_Security.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\POS_Security.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\POS_Security.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POS_Security.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Repository\AccessLogRepository.cs" />
+    <Compile Include="Security\Repository\AdditionalOperationPermissionRepository.cs" />
+    <Compile Include="Security\Repository\AdditionalScreenPermissionRepository.cs" />
+    <Compile Include="Security\Repository\ApplicationPolicyRepository.cs" />
+    <Compile Include="Security\Repository\ApplicationRepository.cs" />
+    <Compile Include="Security\Repository\MenuRepository.cs" />
+    <Compile Include="Security\Repository\ModuleRepository.cs" />
+    <Compile Include="Security\Repository\EmployeeInformationRepository.cs" />
+    <Compile Include="Security\Repository\RoleRepository.cs" />
+    <Compile Include="Security\Repository\RoleWiseOperationPermissionRepository.cs" />
+    <Compile Include="Security\Repository\RoleWiseScreenPermissionRepository.cs" />
+    <Compile Include="Security\Repository\ScreenOperationRepository.cs" />
+    <Compile Include="Security\Repository\ScreenRepository.cs" />
+    <Compile Include="Security\Repository\UserInformationRepository.cs" />
+    <Compile Include="Security\Repository\UserTypeRepository.cs" />
+    <Compile Include="Security\Role.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\RoleAudit.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\RoleWiseOperationPermission.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\RoleWiseScreenPermission.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Screen.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\ScreenOperation.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\UserInformation.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\UserInRole.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\UserType.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\USP_GetAdditionalOperationPermissionList_Result.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\USP_GetAdditionalScreenPermissionList_Result.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\USP_GetAllEmployeeInformation_Result.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\USP_GetAllUserInformation_Result.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\USP_GetRoleWiseOperationPermissionList_Result.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\USP_GetRoleWiseScreenPermissionList_Result.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\USP_GetScreenList_Result.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\USP_GetScreenOperationList_Result.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\USP_GetUserDetails_Result.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Security\USP_GetUsers_Result.cs">
+      <DependentUpon>POS_Security.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="HRM\POS_HRM.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>POS_HRM.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="HRM\POS_HRM.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>POS_HRM.edmx</DependentUpon>
+      <LastGenOutput>POS_HRM.Context.cs</LastGenOutput>
+    </None>
+    <None Include="HRM\POS_HRM.edmx.diagram">
+      <DependentUpon>POS_HRM.edmx</DependentUpon>
+    </None>
+    <None Include="HRM\POS_HRM.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>POS_HRM.edmx</DependentUpon>
+      <LastGenOutput>POS_HRM.cs</LastGenOutput>
+    </None>
+    <EntityDeploy Include="Inventory\POS_Inventory.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>POS_Inventory.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Inventory\POS_Inventory.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>POS_Inventory.edmx</DependentUpon>
+      <LastGenOutput>POS_Inventory.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Inventory\POS_Inventory.edmx.diagram">
+      <DependentUpon>POS_Inventory.edmx</DependentUpon>
+    </None>
+    <None Include="Inventory\POS_Inventory.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>POS_Inventory.edmx</DependentUpon>
+      <LastGenOutput>POS_Inventory.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <EntityDeploy Include="Security\POS_Security.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>POS_Security.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="Sales\POS_Sales.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>POS_Sales.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Sales\POS_Sales.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>POS_Sales.edmx</DependentUpon>
+      <LastGenOutput>POS_Sales.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Sales\POS_Sales.edmx.diagram">
+      <DependentUpon>POS_Sales.edmx</DependentUpon>
+    </None>
+    <None Include="Sales\POS_Sales.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>POS_Sales.edmx</DependentUpon>
+      <LastGenOutput>POS_Sales.cs</LastGenOutput>
+    </None>
+    <None Include="Security\POS_Security.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>POS_Security.edmx</DependentUpon>
+      <LastGenOutput>POS_Security.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Security\POS_Security.edmx.diagram">
+      <DependentUpon>POS_Security.edmx</DependentUpon>
+    </None>
+    <None Include="Security\POS_Security.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>POS_Security.edmx</DependentUpon>
+      <LastGenOutput>POS_Security.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\POS.UTILS\POS.UTILS.csproj">
+      <Project>{f7436c83-100a-41f1-a2b6-d5137caf3cb9}</Project>
+      <Name>POS.UTILS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelsStoreContainer" CdmEntityContainer="POS_Sales">
+    <EntitySetMapping Name="Sales">
+      <EntityTypeMapping TypeName="Models.Sale">
+        <MappingFragment StoreEntitySet="Sale">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="SaleInvoiceId" ColumnName="SaleInvoiceId" />
+          <ScalarProperty Name="SaleInvoiceDate" ColumnName="SaleInvoiceDate" />
+          <ScalarProperty Name="TotalSalePrice" ColumnName="TotalSalePrice" />
+          <ScalarProperty Name="DiscountInPercentage" ColumnName="DiscountInPercentage" />
+          <ScalarProperty Name="DiscountAmount" ColumnName="DiscountAmount" />
+          <ScalarProperty Name="VATInPercentage" ColumnName="VATInPercentage" />
+          <ScalarProperty Name="VATAmount" ColumnName="VATAmount" />
+          <ScalarProperty Name="ServiceCharge" ColumnName="ServiceCharge" />
+          <ScalarProperty Name="NetAmount" ColumnName="NetAmount" />
+          <ScalarProperty Name="SaleBy" ColumnName="SaleBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SaleDetails">
+      <EntityTypeMapping TypeName="Models.SaleDetail">
+        <MappingFragment StoreEntitySet="SaleDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SaleId" ColumnName="SaleId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ProductQuantity" ColumnName="ProductQuantity" />
+          <ScalarProperty Name="ProductUnitPrice" ColumnName="ProductUnitPrice" />
+          <ScalarProperty Name="ProductDiscountInPercentage" ColumnName="ProductDiscountInPercentage" />
+          <ScalarProperty Name="ProductDiscountAmount" ColumnName="ProductDiscountAmount" />
+          <ScalarProperty Name="ProductTotalPrice" ColumnName="ProductTotalPrice" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalePayments">
+      <EntityTypeMapping TypeName="Models.SalePayment">
+        <MappingFragment StoreEntitySet="SalePayment">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SaleId" ColumnName="SaleId" />
+          <ScalarProperty Name="NetAmount" ColumnName="NetAmount" />
+          <ScalarProperty Name="ReceivedCashAmount" ColumnName="ReceivedCashAmount" />
+          <ScalarProperty Name="ReceivedCardAmount" ColumnName="ReceivedCardAmount" />
+          <ScalarProperty Name="ReceivedSaleReturnAmount" ColumnName="ReceivedSaleReturnAmount" />
+          <ScalarProperty Name="ReceivedSaleReturnId" ColumnName="ReceivedSaleReturnId" />
+          <ScalarProperty Name="DiscountInPercentageForCard" ColumnName="DiscountInPercentageForCard" />
+          <ScalarProperty Name="DiscountAmountForCard" ColumnName="DiscountAmountForCard" />
+          <ScalarProperty Name="BankIdForCard" ColumnName="BankIdForCard" />
+          <ScalarProperty Name="CardType" ColumnName="CardType" />
+          <ScalarProperty Name="CardNo" ColumnName="CardNo" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SaleReturnReceives">
+      <EntityTypeMapping TypeName="Models.SaleReturnReceive">
+        <MappingFragment StoreEntitySet="SaleReturnReceive">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SaleReturnDate" ColumnName="SaleReturnDate" />
+          <ScalarProperty Name="SaleId" ColumnName="SaleId" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="SaleInvoiceId" ColumnName="SaleInvoiceId" />
+          <ScalarProperty Name="TotalSalePrice" ColumnName="TotalSalePrice" />
+          <ScalarProperty Name="VATInPercentage" ColumnName="VATInPercentage" />
+          <ScalarProperty Name="VATInAmount" ColumnName="VATInAmount" />
+          <ScalarProperty Name="NetAmount" ColumnName="NetAmount" />
+          <ScalarProperty Name="SaleReturnBy" ColumnName="SaleReturnBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SaleReturnReceiveDetails">
+      <EntityTypeMapping TypeName="Models.SaleReturnReceiveDetail">
+        <MappingFragment StoreEntitySet="SaleReturnReceiveDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SaleReturnId" ColumnName="SaleReturnId" />
+          <ScalarProperty Name="ReferenceSaleId" ColumnName="ReferenceSaleId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ProductUnitPrice" ColumnName="ProductUnitPrice" />
+          <ScalarProperty Name="ProductQuantity" ColumnName="ProductQuantity" />
+          <ScalarProperty Name="ProductTotalPrice" ColumnName="ProductTotalPrice" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

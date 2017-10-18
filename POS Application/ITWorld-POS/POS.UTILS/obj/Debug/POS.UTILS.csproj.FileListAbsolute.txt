@@ -1,0 +1,75 @@
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\AutoMapper.Net4.dll
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\POS.UTILS.dll.config
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\POS.UTILS.dll
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\POS.UTILS.pdb
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\AutoMapper.dll
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\EntityFramework.dll
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\EntityFramework.SqlServer.dll
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\Ninject.dll
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\AutoMapper.pdb
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\AutoMapper.xml
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\AutoMapper.Net4.pdb
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\EntityFramework.xml
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\EntityFramework.SqlServer.xml
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\Ninject.xml
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\obj\Debug\POS.UTILS.csprojResolveAssemblyReference.cache
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\obj\Debug\POS.UTILS.POSText.resources
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\obj\Debug\POS.UTILS.csproj.GenerateResource.Cache
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\obj\Debug\POS.UTILS.dll
+G:\IT World BD\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\obj\Debug\POS.UTILS.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\AutoMapper.Net4.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\POS.UTILS.dll.config
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\POS.UTILS.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\POS.UTILS.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\AutoMapper.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\EntityFramework.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\EntityFramework.SqlServer.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\Ninject.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\AutoMapper.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\AutoMapper.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\AutoMapper.Net4.pdb
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\EntityFramework.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\EntityFramework.SqlServer.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\Ninject.xml
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\obj\Debug\POS.UTILS.POSText.resources
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\obj\Debug\POS.UTILS.csproj.GenerateResource.Cache
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\obj\Debug\POS.UTILS.dll
+F:\ALL WORKING PROJECTS\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\obj\Debug\POS.UTILS.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\AutoMapper.Net4.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\POS.UTILS.dll.config
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\POS.UTILS.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\POS.UTILS.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\AutoMapper.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\EntityFramework.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\EntityFramework.SqlServer.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\Ninject.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\AutoMapper.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\AutoMapper.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\AutoMapper.Net4.pdb
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\EntityFramework.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\EntityFramework.SqlServer.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\bin\Debug\Ninject.xml
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\obj\Debug\POS.UTILS.csprojResolveAssemblyReference.cache
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\obj\Debug\POS.UTILS.POSText.resources
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\obj\Debug\POS.UTILS.csproj.GenerateResource.Cache
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\obj\Debug\POS.UTILS.dll
+F:\2. Worked Projects\MVC PROJECTS\MVC PROJECTS\IT World Project\ITWorld-POS Application (Grameen Shomvar)\ITWorld-POS\POS.UTILS\obj\Debug\POS.UTILS.pdb
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS.UTILS\bin\Debug\AutoMapper.Net4.dll
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS.UTILS\bin\Debug\POS.UTILS.dll.config
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS.UTILS\bin\Debug\POS.UTILS.dll
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS.UTILS\bin\Debug\POS.UTILS.pdb
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS.UTILS\bin\Debug\AutoMapper.dll
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS.UTILS\bin\Debug\EntityFramework.dll
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS.UTILS\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS.UTILS\bin\Debug\Ninject.dll
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS.UTILS\bin\Debug\AutoMapper.pdb
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS.UTILS\bin\Debug\AutoMapper.xml
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS.UTILS\bin\Debug\AutoMapper.Net4.pdb
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS.UTILS\bin\Debug\EntityFramework.xml
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS.UTILS\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS.UTILS\bin\Debug\Ninject.xml
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS.UTILS\obj\Debug\POS.UTILS.csprojResolveAssemblyReference.cache
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS.UTILS\obj\Debug\POS.UTILS.POSText.resources
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS.UTILS\obj\Debug\POS.UTILS.csproj.GenerateResource.Cache
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS.UTILS\obj\Debug\POS.UTILS.dll
+D:\Project For Github\1. POS\POS Application\ITWorld-POS\POS.UTILS\obj\Debug\POS.UTILS.pdb

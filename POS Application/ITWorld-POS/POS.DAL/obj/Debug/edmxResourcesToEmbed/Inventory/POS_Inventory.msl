@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelsStoreContainer" CdmEntityContainer="POS_Inventory">
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="Models.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductCategoryId" ColumnName="ProductCategoryId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductCategories">
+      <EntityTypeMapping TypeName="Models.ProductCategory">
+        <MappingFragment StoreEntitySet="ProductCategory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductCategoryName" ColumnName="ProductCategoryName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductLedgers">
+      <EntityTypeMapping TypeName="Models.ProductLedger">
+        <MappingFragment StoreEntitySet="ProductLedger">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="OpenQuantity" ColumnName="OpenQuantity" />
+          <ScalarProperty Name="ClosingQuantity" ColumnName="ClosingQuantity" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductLedgerDetails">
+      <EntityTypeMapping TypeName="Models.ProductLedgerDetail">
+        <MappingFragment StoreEntitySet="ProductLedgerDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductLedgerId" ColumnName="ProductLedgerId" />
+          <ScalarProperty Name="PurchaseReceiveDetailId" ColumnName="PurchaseReceiveDetailId" />
+          <ScalarProperty Name="PurchaseReturnDetailId" ColumnName="PurchaseReturnDetailId" />
+          <ScalarProperty Name="SaleDetailId" ColumnName="SaleDetailId" />
+          <ScalarProperty Name="SaleReturnReceiveDetailId" ColumnName="SaleReturnReceiveDetailId" />
+          <ScalarProperty Name="TransferQuantity" ColumnName="TransferQuantity" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductPrices">
+      <EntityTypeMapping TypeName="Models.ProductPrice">
+        <MappingFragment StoreEntitySet="ProductPrice">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PurchaseReceiveDetailId" ColumnName="PurchaseReceiveDetailId" />
+          <ScalarProperty Name="PurchaseUnitPrice" ColumnName="PurchaseUnitPrice" />
+          <ScalarProperty Name="DiscountInPercentage" ColumnName="DiscountInPercentage" />
+          <ScalarProperty Name="ProductCost" ColumnName="ProductCost" />
+          <ScalarProperty Name="ProductSalePrice" ColumnName="ProductSalePrice" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductSections">
+      <EntityTypeMapping TypeName="Models.ProductSection">
+        <MappingFragment StoreEntitySet="ProductSection">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductSectionName" ColumnName="ProductSectionName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductStores">
+      <EntityTypeMapping TypeName="Models.ProductStore">
+        <MappingFragment StoreEntitySet="ProductStore">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PurchaseReceiveDetailId" ColumnName="PurchaseReceiveDetailId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="Serial" ColumnName="Serial" />
+          <ScalarProperty Name="ProductUnitId" ColumnName="ProductUnitId" />
+          <ScalarProperty Name="ProductSectionId" ColumnName="ProductSectionId" />
+          <ScalarProperty Name="ProductQuantity" ColumnName="ProductQuantity" />
+          <ScalarProperty Name="ProductSizeCode" ColumnName="ProductSizeCode" />
+          <ScalarProperty Name="ProductSizeNumber" ColumnName="ProductSizeNumber" />
+          <ScalarProperty Name="ProductSizeAge" ColumnName="ProductSizeAge" />
+          <ScalarProperty Name="ProductColor" ColumnName="ProductColor" />
+          <ScalarProperty Name="ProductStyle" ColumnName="ProductStyle" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductUnits">
+      <EntityTypeMapping TypeName="Models.ProductUnit">
+        <MappingFragment StoreEntitySet="ProductUnit">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductUnitName" ColumnName="ProductUnitName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseChallans">
+      <EntityTypeMapping TypeName="Models.PurchaseChallan">
+        <MappingFragment StoreEntitySet="PurchaseChallan">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ChallanNumber" ColumnName="ChallanNumber" />
+          <ScalarProperty Name="ChallanDate" ColumnName="ChallanDate" />
+          <ScalarProperty Name="SupplierId" ColumnName="SupplierId" />
+          <ScalarProperty Name="OrderBy" ColumnName="OrderBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseChallanDetails">
+      <EntityTypeMapping TypeName="Models.PurchaseChallanDetail">
+        <MappingFragment StoreEntitySet="PurchaseChallanDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PurchaseChallanId" ColumnName="PurchaseChallanId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ProductUnitPrice" ColumnName="ProductUnitPrice" />
+          <ScalarProperty Name="ProductQuantity" ColumnName="ProductQuantity" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseReceives">
+      <EntityTypeMapping TypeName="Models.PurchaseReceive">
+        <MappingFragment StoreEntitySet="PurchaseReceive">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ReceiveNumber" ColumnName="ReceiveNumber" />
+          <ScalarProperty Name="ReceiveDate" ColumnName="ReceiveDate" />
+          <ScalarProperty Name="ReceivedBy" ColumnName="ReceivedBy" />
+          <ScalarProperty Name="ReceivedFrom" ColumnName="ReceivedFrom" />
+          <ScalarProperty Name="ChallanId" ColumnName="ChallanId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseReceiveDetails">
+      <EntityTypeMapping TypeName="Models.PurchaseReceiveDetail">
+        <MappingFragment StoreEntitySet="PurchaseReceiveDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PurchaseReceiveId" ColumnName="PurchaseReceiveId" />
+          <ScalarProperty Name="PurchaseChallanDetailId" ColumnName="PurchaseChallanDetailId" />
+          <ScalarProperty Name="ProductUnitPrice" ColumnName="ProductUnitPrice" />
+          <ScalarProperty Name="ProductQuantity" ColumnName="ProductQuantity" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseReturns">
+      <EntityTypeMapping TypeName="Models.PurchaseReturn">
+        <MappingFragment StoreEntitySet="PurchaseReturn">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ReturnNumber" ColumnName="ReturnNumber" />
+          <ScalarProperty Name="ReturnDate" ColumnName="ReturnDate" />
+          <ScalarProperty Name="ReturnBy" ColumnName="ReturnBy" />
+          <ScalarProperty Name="PurchaseReceiveId" ColumnName="PurchaseReceiveId" />
+          <ScalarProperty Name="ReceiveNumber" ColumnName="ReceiveNumber" />
+          <ScalarProperty Name="SupplierId" ColumnName="SupplierId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseReturnDetails">
+      <EntityTypeMapping TypeName="Models.PurchaseReturnDetail">
+        <MappingFragment StoreEntitySet="PurchaseReturnDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PurchaseReturnId" ColumnName="PurchaseReturnId" />
+          <ScalarProperty Name="PurchaseReceiveDetailId" ColumnName="PurchaseReceiveDetailId" />
+          <ScalarProperty Name="ProductUnitPrice" ColumnName="ProductUnitPrice" />
+          <ScalarProperty Name="ProductQuantity" ColumnName="ProductQuantity" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers">
+      <EntityTypeMapping TypeName="Models.Supplier">
+        <MappingFragment StoreEntitySet="Supplier">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
+          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="OwnerName" ColumnName="OwnerName" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="NID" ColumnName="NID" />
+          <ScalarProperty Name="BankAccountNumber" ColumnName="BankAccountNumber" />
+          <ScalarProperty Name="TIN" ColumnName="TIN" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="USP_GetAllProductStoreInformation" FunctionName="Models.Store.USP_GetAllProductStoreInformation" />
+    <FunctionImportMapping FunctionImportName="USP_GetAllPurchaseChallan" FunctionName="Models.Store.USP_GetAllPurchaseChallan">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Models.USP_GetAllPurchaseChallan_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ChallanNumber" ColumnName="ChallanNumber" />
+          <ScalarProperty Name="ChallanDate" ColumnName="ChallanDate" />
+          <ScalarProperty Name="SupplierId" ColumnName="SupplierId" />
+          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+          <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
+          <ScalarProperty Name="OrderBy" ColumnName="OrderBy" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_GetAllPurchaseChallanDetail" FunctionName="Models.Store.USP_GetAllPurchaseChallanDetail">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Models.USP_GetAllPurchaseChallanDetail_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PurchaseChallanId" ColumnName="PurchaseChallanId" />
+          <ScalarProperty Name="ChallanNumber" ColumnName="ChallanNumber" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductCategoryId" ColumnName="ProductCategoryId" />
+          <ScalarProperty Name="ProductCategoryName" ColumnName="ProductCategoryName" />
+          <ScalarProperty Name="ProductUnitPrice" ColumnName="ProductUnitPrice" />
+          <ScalarProperty Name="ProductQuantity" ColumnName="ProductQuantity" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_GetAllPurchaseReceive" FunctionName="Models.Store.USP_GetAllPurchaseReceive">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Models.USP_GetAllPurchaseReceive_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ReceiveNumber" ColumnName="ReceiveNumber" />
+          <ScalarProperty Name="ReceiveDate" ColumnName="ReceiveDate" />
+          <ScalarProperty Name="ReceivedBy" ColumnName="ReceivedBy" />
+          <ScalarProperty Name="ReceivedFrom" ColumnName="ReceivedFrom" />
+          <ScalarProperty Name="ChallanId" ColumnName="ChallanId" />
+          <ScalarProperty Name="ChallanNumber" ColumnName="ChallanNumber" />
+          <ScalarProperty Name="ChallanDate" ColumnName="ChallanDate" />
+          <ScalarProperty Name="SupplierId" ColumnName="SupplierId" />
+          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+          <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_GetAllPurchaseReceiveDetail" FunctionName="Models.Store.USP_GetAllPurchaseReceiveDetail">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Models.USP_GetAllPurchaseReceiveDetail_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PurchaseReceiveId" ColumnName="PurchaseReceiveId" />
+          <ScalarProperty Name="PurchaseChallanDetailId" ColumnName="PurchaseChallanDetailId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="SupplierId" ColumnName="SupplierId" />
+          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+          <ScalarProperty Name="ProductCategoryId" ColumnName="ProductCategoryId" />
+          <ScalarProperty Name="ProductCategoryName" ColumnName="ProductCategoryName" />
+          <ScalarProperty Name="ProductUnitPrice" ColumnName="ProductUnitPrice" />
+          <ScalarProperty Name="ProductQuantity" ColumnName="ProductQuantity" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_GetProductSearchResult" FunctionName="Models.Store.USP_GetProductSearchResult">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Models.USP_GetProductSearchResult_Result">
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductCategoryId" ColumnName="ProductCategoryId" />
+          <ScalarProperty Name="ProductCategoryName" ColumnName="ProductCategoryName" />
+          <ScalarProperty Name="PurchaseReceiveId" ColumnName="PurchaseReceiveId" />
+          <ScalarProperty Name="ReceiveDate" ColumnName="ReceiveDate" />
+          <ScalarProperty Name="ReceiveNumber" ColumnName="ReceiveNumber" />
+          <ScalarProperty Name="PurchaseReceiveDetailId" ColumnName="PurchaseReceiveDetailId" />
+          <ScalarProperty Name="ProductUnitPrice" ColumnName="ProductUnitPrice" />
+          <ScalarProperty Name="DiscountInPercentage" ColumnName="DiscountInPercentage" />
+          <ScalarProperty Name="ProductQuantity" ColumnName="ProductQuantity" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_GetProductStoreInformation" FunctionName="Models.Store.USP_GetProductStoreInformation">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Models.USP_GetProductStoreInformation_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PurchaseReceiveDetailId" ColumnName="PurchaseReceiveDetailId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="Serial" ColumnName="Serial" />
+          <ScalarProperty Name="ProductUnitId" ColumnName="ProductUnitId" />
+          <ScalarProperty Name="ProductUnitName" ColumnName="ProductUnitName" />
+          <ScalarProperty Name="ProductSectionId" ColumnName="ProductSectionId" />
+          <ScalarProperty Name="ProductSectionName" ColumnName="ProductSectionName" />
+          <ScalarProperty Name="ProductQuantity" ColumnName="ProductQuantity" />
+          <ScalarProperty Name="ProductSizeCode" ColumnName="ProductSizeCode" />
+          <ScalarProperty Name="ProductSizeNumber" ColumnName="ProductSizeNumber" />
+          <ScalarProperty Name="ProductSizeAge" ColumnName="ProductSizeAge" />
+          <ScalarProperty Name="ProductColor" ColumnName="ProductColor" />
+          <ScalarProperty Name="ProductStyle" ColumnName="ProductStyle" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="SetOn" ColumnName="SetOn" />
+          <ScalarProperty Name="SetBy" ColumnName="SetBy" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

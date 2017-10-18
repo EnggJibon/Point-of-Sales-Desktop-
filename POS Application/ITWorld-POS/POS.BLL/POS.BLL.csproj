@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DCD9D01E-0434-49EF-A622-FDD8679C3633}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POS.BLL</RootNamespace>
+    <AssemblyName>POS.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.Net4.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoMapperBootstrapper.cs" />
+    <Compile Include="BootStrapper.cs" />
+    <Compile Include="HRM\Domain\DepartmentModel.cs" />
+    <Compile Include="HRM\Domain\DesignationModel.cs" />
+    <Compile Include="HRM\IOC\HRMDependencyInjector.cs" />
+    <Compile Include="HRM\IOC\HRMRepositoryModule.cs" />
+    <Compile Include="HRM\IOC\HRMServiceModule.cs" />
+    <Compile Include="HRM\Mapping\DatabaseToDomain.cs" />
+    <Compile Include="HRM\Mapping\DomainToDatabase.cs" />
+    <Compile Include="HRM\Mapping\HRMAutoMapperBootStrapper.cs" />
+    <Compile Include="HRM\Service\DepartmentService.cs" />
+    <Compile Include="HRM\Service\DesignationService.cs" />
+    <Compile Include="Sales\Domain\SaleDetailModel.cs" />
+    <Compile Include="Sales\Domain\SaleReturnReceiveDetailModel.cs" />
+    <Compile Include="Sales\Domain\SaleReturnReceiveModel.cs" />
+    <Compile Include="Sales\Domain\SalePaymentModel.cs" />
+    <Compile Include="Sales\Domain\SaleModel.cs" />
+    <Compile Include="Sales\IOC\SalesDependencyInjector.cs" />
+    <Compile Include="Sales\IOC\SalesRepositoryModule.cs" />
+    <Compile Include="Sales\IOC\SalesServiceModule.cs" />
+    <Compile Include="Sales\Mapping\DatabaseToDomain.cs" />
+    <Compile Include="Sales\Mapping\DomainToDatabase.cs" />
+    <Compile Include="Sales\Mapping\SalesAutoMapperBootStrapper.cs" />
+    <Compile Include="Sales\Service\SaleDetailService.cs" />
+    <Compile Include="Sales\Service\SaleReturnReceiveService.cs" />
+    <Compile Include="Sales\Service\SaleReturnReceiveDetailService.cs" />
+    <Compile Include="Sales\Service\SalePaymentService.cs" />
+    <Compile Include="Sales\Service\SaleService.cs" />
+    <Compile Include="Inventory\Domain\ProductPriceModel.cs" />
+    <Compile Include="Inventory\Domain\ProductSearchInformation.cs" />
+    <Compile Include="Inventory\Domain\ProductStoreModel.cs" />
+    <Compile Include="Inventory\Domain\ProductModel.cs" />
+    <Compile Include="Inventory\Domain\PurchaseReturnDetailModel.cs" />
+    <Compile Include="Inventory\Domain\PurchaseReceiveDetailModel.cs" />
+    <Compile Include="Inventory\Domain\PurchaseChallanDetailModel.cs" />
+    <Compile Include="Inventory\Domain\PurchaseReturnModel.cs" />
+    <Compile Include="Inventory\Domain\PurchaseReceiveModel.cs" />
+    <Compile Include="Inventory\Domain\PurchaseChallanModel.cs" />
+    <Compile Include="Inventory\Domain\SupplierModel.cs" />
+    <Compile Include="Inventory\Domain\ProductUnitModel.cs" />
+    <Compile Include="Inventory\Domain\ProductSectionModel.cs" />
+    <Compile Include="Inventory\Domain\ProductCategoryModel.cs" />
+    <Compile Include="Inventory\IOC\InventoryDependencyInjector.cs" />
+    <Compile Include="Inventory\IOC\InventoryRepositoryModule.cs" />
+    <Compile Include="Inventory\IOC\InventoryServiceModule.cs" />
+    <Compile Include="Inventory\Mapping\DatabaseToDomain.cs" />
+    <Compile Include="Inventory\Mapping\DomainToDatabase.cs" />
+    <Compile Include="Inventory\Mapping\InventoryAutoMapperBootStrapper.cs" />
+    <Compile Include="Inventory\Service\ProductSectionService.cs" />
+    <Compile Include="Inventory\Service\ProductPriceService.cs" />
+    <Compile Include="Inventory\Service\ProductStoreService.cs" />
+    <Compile Include="Inventory\Service\PurchaseReturnDetailService.cs" />
+    <Compile Include="Inventory\Service\PurchaseReceiveDetailService.cs" />
+    <Compile Include="Inventory\Service\PurchaseChallanDetailService.cs" />
+    <Compile Include="Inventory\Service\PurchaseReturnService.cs" />
+    <Compile Include="Inventory\Service\PurchaseReceiveService.cs" />
+    <Compile Include="Inventory\Service\PurchaseChallanService.cs" />
+    <Compile Include="Inventory\Service\ProductService.cs" />
+    <Compile Include="Inventory\Service\ProductUnitService.cs" />
+    <Compile Include="Inventory\Service\SupplierService.cs" />
+    <Compile Include="Inventory\Service\ProductCategoryService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\AccessLogService.cs" />
+    <Compile Include="Security\AdditionalOperationPermissionService.cs" />
+    <Compile Include="Security\AdditionalScreenPermissionService.cs" />
+    <Compile Include="Security\ApplicationPolicyService.cs" />
+    <Compile Include="Security\ApplicationService.cs" />
+    <Compile Include="Security\Authenticator.cs" />
+    <Compile Include="Security\Domain\AccessLogModel.cs" />
+    <Compile Include="Security\Domain\AdditionalOperationPermissionModel.cs" />
+    <Compile Include="Security\Domain\AdditionalScreenPermissionModel.cs" />
+    <Compile Include="Security\Domain\ApplicationModel.cs" />
+    <Compile Include="Security\Domain\ApplicationPolicyModel.cs" />
+    <Compile Include="Security\Domain\EmployeeInformationModel.cs" />
+    <Compile Include="Security\Domain\MenuModel.cs" />
+    <Compile Include="Security\Domain\ModuleModel.cs" />
+    <Compile Include="Security\Domain\RoleModel.cs" />
+    <Compile Include="Security\Domain\RoleWiseOperationPermissionModel.cs" />
+    <Compile Include="Security\Domain\RoleWiseScreenPermissionModel.cs" />
+    <Compile Include="Security\Domain\ScreenModel.cs" />
+    <Compile Include="Security\Domain\ScreenOperationModel.cs" />
+    <Compile Include="Security\Domain\UserInformationModel.cs" />
+    <Compile Include="Security\Domain\UserTypeModel.cs" />
+    <Compile Include="Security\IOC\SecurityDependencyInjector.cs" />
+    <Compile Include="Security\IOC\SecurityRepositoryModule.cs" />
+    <Compile Include="Security\IOC\SecurityServiceModule.cs" />
+    <Compile Include="Security\LoginInformation.cs" />
+    <Compile Include="Security\Mapping\DatabaseToDomain.cs" />
+    <Compile Include="Security\Mapping\DomainToDatabase.cs" />
+    <Compile Include="Security\Mapping\SecurityAutoMapperBootStrapper.cs" />
+    <Compile Include="Security\MenuService.cs" />
+    <Compile Include="Security\ModuleService.cs" />
+    <Compile Include="Security\EmployeeInformationService.cs" />
+    <Compile Include="Security\RoleService.cs" />
+    <Compile Include="Security\RoleWiseOperationPermissionService.cs" />
+    <Compile Include="Security\RoleWiseScreenPermissionService.cs" />
+    <Compile Include="Security\ScreenOperationService.cs" />
+    <Compile Include="Security\ScreenService.cs" />
+    <Compile Include="Security\UserInformationService.cs" />
+    <Compile Include="Security\UserTypeService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\POS.DAL\POS.DAL.csproj">
+      <Project>{a5aee045-06a1-4a9c-8069-10948188b6b7}</Project>
+      <Name>POS.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POS.UTILS\POS.UTILS.csproj">
+      <Project>{F7436C83-100A-41F1-A2B6-D5137CAF3CB9}</Project>
+      <Name>POS.UTILS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
